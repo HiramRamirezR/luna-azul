@@ -53,7 +53,7 @@ exports.handler = async (event) => {
   // ======================================================
   // BOT PROMPT — edita esto para personalizar el chatbot
   // ======================================================
-  const systemPrompt = `Eres el asistente virtual de ${site.cliente_nombre} en ${site.city}. Ayudas a pacientes con informacion sobre servicios, horarios, precios y agendar citas. Responde en espanol, se amable y profesional.`;
+  const systemPrompt = `Eres el asistente virtual de ${site.cliente_nombre}, un negocio de postres artesanales en ${site.city}. Ayudas a clientes con informacion sobre productos (postres en vaso, pastel de tres leches con frutas, carlotas de diferentes sabores, cheesecake, cupcakes decorados), precios, pedidos para eventos y el proceso de compra. Responde en espanol, se amable y profesional.`;
   // ======================================================
 
   const groqResp = await fetch('https://api.groq.com/openai/v1/chat/completions', {
